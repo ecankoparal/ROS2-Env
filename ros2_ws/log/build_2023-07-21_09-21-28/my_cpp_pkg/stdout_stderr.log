@@ -1,0 +1,64 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ros2_ws/build/my_cpp_pkg
+[35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[35m[1mConsolidate compiler generated dependencies of target robot_news_station[0m
+[ 30%] Built target cpp_node
+[ 40%] Built target robot_news_station
+[35m[1mConsolidate compiler generated dependencies of target smartphone[0m
+[35m[1mConsolidate compiler generated dependencies of target add_two_ints_server[0m
+[ 60%] Built target smartphone
+[ 80%] Built target add_two_ints_server
+[ 90%] [32mBuilding CXX object CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o[0m
+[01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:[m[K In member function ‘[01m[Kvoid AddTwoIntsClientNode::callAddTwoIntsService(int, int)[m[K’:
+[01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:13:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+   13 |                 auto client = this->create_client<[01;31m[Kexample_interfaces[m[K::srv::AddTwoInts>("add_two_ints");
+      |                                                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                   [32m[Krcl_interfaces[m[K
+[01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:13:37:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   13 |                 auto client = this->[01;31m[Kcreate_client<example_interfaces::srv::AddTwoInts>[m[K("add_two_ints");
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:13:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KAddTwoIntsClientNode::create_client<<expression error> >(const char [13])[m[K’
+   13 |   auto client = [01;31m[Kthis->create_client<example_interfaces::srv::AddTwoInts>("add_two_ints")[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:252:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT> typename rclcpp::Client<ServiceT>::SharedPtr rclcpp::Node::create_client(const string&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  252 |   [01;36m[Kcreate_client[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:252:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:13:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   13 |   auto client = [01;31m[Kthis->create_client<example_interfaces::srv::AddTwoInts>("add_two_ints")[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:18:37:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   18 |                 auto request = std::[01;31m[Kmake_shared<example_interfaces::srv::AddTwoInts::Request>[m[K();
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:18:94:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<example_interfaces>()[m[K’
+   18 |    auto request = [01;31m[Kstd::make_shared<example_interfaces::srv::AddTwoInts::Request>()[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+gmake[2]: *** [CMakeFiles/add_two_ints_client.dir/build.make:76: CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/add_two_ints_client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

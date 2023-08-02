@@ -1,0 +1,2 @@
+Invoking command in '/home/ros2_ws/build/my_roobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/ros2_ws/src/my_roobot_interfaces -DCMAKE_INSTALL_PREFIX=/home/ros2_ws/install/my_roobot_interfaces
+Invoked command in '/home/ros2_ws/build/my_roobot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/ros2_ws/src/my_roobot_interfaces -DCMAKE_INSTALL_PREFIX=/home/ros2_ws/install/my_roobot_interfaces

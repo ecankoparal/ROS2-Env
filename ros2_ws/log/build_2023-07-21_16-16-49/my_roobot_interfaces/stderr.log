@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:4 (if):
+  if given arguments:
+
+    "not" "CMAKE_CXX_STANDARD"
+
+  Unknown arguments specified
+
+[0m
+gmake: *** [Makefile:747: cmake_check_build_system] Error 1

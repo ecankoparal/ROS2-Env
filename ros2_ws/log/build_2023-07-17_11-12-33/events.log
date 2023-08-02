@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.000436] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000474] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000520] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.009330] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.010171] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.011115] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2_ws/build/my_cpp_pkg', '--', '-j2', '-l2'], 'cwd': '/home/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '127.0.0.1 45820 22005'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'DESKTOP-FUPJPMS'), ('WSL_INTEROP', '/run/WSL/2923_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('LIBGL_ALWAYS_INDIRECT', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_1.2.5.0_x64__8wekyb3d8bbwe:/mnt/c/Users/ADMINI~1/AppData/Roaming/MobaXterm/slash/bin:/mnt/c/Windows/:/mnt/c/Windows/system32/:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Administrator/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Administrator/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.2/bin:/mnt/c/Users/Administrator/AppData/Roaming/npm:/mnt/c/Program Files/ffmpeg-2023-03-05-git-912ac82a3c-full_build/bin:/mnt/c/Users/Administrator/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Administrator/.jdks/openjdk-19.0.2/bin:/mnt/c/Program Files/Maven/apache-maven-3.9.1/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.2/bin:/mnt/c/Program Files/MongoDB/Server/6.0/bin:/mnt/c/Windows/sysnative/:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ros2_ws/install/my_py_pkg:/home/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ros2_ws/build/my_cpp_pkg'), ('SSH_CONNECTION', '127.0.0.1 45820 127.0.0.1 22005'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ros2_ws/install/my_cpp_pkg:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.036676] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098523] (-) TimerEvent: {}
+[0.159971] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.198698] (-) TimerEvent: {}
+[0.299128] (-) TimerEvent: {}
+[0.364851] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.367272] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.373318] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.384413] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.399131] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399227] (-) TimerEvent: {}
+[0.454215] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.455546] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.499381] (-) TimerEvent: {}
+[0.599740] (-) TimerEvent: {}
+[0.700345] (-) TimerEvent: {}
+[0.801093] (-) TimerEvent: {}
+[0.901483] (-) TimerEvent: {}
+[1.001875] (-) TimerEvent: {}
+[1.102209] (-) TimerEvent: {}
+[1.202572] (-) TimerEvent: {}
+[1.302998] (-) TimerEvent: {}
+[1.403419] (-) TimerEvent: {}
+[1.503962] (-) TimerEvent: {}
+[1.604448] (-) TimerEvent: {}
+[1.704999] (-) TimerEvent: {}
+[1.805445] (-) TimerEvent: {}
+[1.905881] (-) TimerEvent: {}
+[2.006289] (-) TimerEvent: {}
+[2.106773] (-) TimerEvent: {}
+[2.207169] (-) TimerEvent: {}
+[2.307600] (-) TimerEvent: {}
+[2.408092] (-) TimerEvent: {}
+[2.508514] (-) TimerEvent: {}
+[2.609069] (-) TimerEvent: {}
+[2.709539] (-) TimerEvent: {}
+[2.810087] (-) TimerEvent: {}
+[2.910475] (-) TimerEvent: {}
+[3.010980] (-) TimerEvent: {}
+[3.111404] (-) TimerEvent: {}
+[3.211843] (-) TimerEvent: {}
+[3.312262] (-) TimerEvent: {}
+[3.412666] (-) TimerEvent: {}
+[3.513176] (-) TimerEvent: {}
+[3.613741] (-) TimerEvent: {}
+[3.714185] (-) TimerEvent: {}
+[3.814631] (-) TimerEvent: {}
+[3.915091] (-) TimerEvent: {}
+[4.015626] (-) TimerEvent: {}
+[4.116098] (-) TimerEvent: {}
+[4.216605] (-) TimerEvent: {}
+[4.317077] (-) TimerEvent: {}
+[4.417507] (-) TimerEvent: {}
+[4.517922] (-) TimerEvent: {}
+[4.618382] (-) TimerEvent: {}
+[4.718768] (-) TimerEvent: {}
+[4.819250] (-) TimerEvent: {}
+[4.919922] (-) TimerEvent: {}
+[5.020489] (-) TimerEvent: {}
+[5.121068] (-) TimerEvent: {}
+[5.221513] (-) TimerEvent: {}
+[5.322098] (-) TimerEvent: {}
+[5.422854] (-) TimerEvent: {}
+[5.523668] (-) TimerEvent: {}
+[5.624459] (-) TimerEvent: {}
+[5.725341] (-) TimerEvent: {}
+[5.826025] (-) TimerEvent: {}
+[5.926462] (-) TimerEvent: {}
+[6.026879] (-) TimerEvent: {}
+[6.127371] (-) TimerEvent: {}
+[6.227820] (-) TimerEvent: {}
+[6.328240] (-) TimerEvent: {}
+[6.428697] (-) TimerEvent: {}
+[6.529177] (-) TimerEvent: {}
+[6.629634] (-) TimerEvent: {}
+[6.730077] (-) TimerEvent: {}
+[6.830547] (-) TimerEvent: {}
+[6.931005] (-) TimerEvent: {}
+[7.031402] (-) TimerEvent: {}
+[7.131847] (-) TimerEvent: {}
+[7.232292] (-) TimerEvent: {}
+[7.332684] (-) TimerEvent: {}
+[7.433129] (-) TimerEvent: {}
+[7.533495] (-) TimerEvent: {}
+[7.634019] (-) TimerEvent: {}
+[7.734502] (-) TimerEvent: {}
+[7.834986] (-) TimerEvent: {}
+[7.935389] (-) TimerEvent: {}
+[8.035881] (-) TimerEvent: {}
+[8.086502] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.136014] (-) TimerEvent: {}
+[8.236322] (-) TimerEvent: {}
+[8.289868] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.303580] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[8.305739] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2_ws/build/my_cpp_pkg\n'}
+[8.332415] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o\x1b[0m\n'}
+[8.336399] (-) TimerEvent: {}
+[8.360783] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kroot/opt/ros/humble/include/rclcpp/rclcpp.hpp: No such file or directory\n'}
+[8.361009] (my_cpp_pkg) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"root/opt/ros/humble/include/rclcpp/rclcpp.hpp"\x1b[m\x1b[K\n'}
+[8.361078] (my_cpp_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.361137] (my_cpp_pkg) StderrLine: {'line': b'compilation terminated.\n'}
+[8.361801] (my_cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cpp_node.dir/build.make:76: CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o] Error 1\n'}
+[8.361949] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_node.dir/all] Error 2\n'}
+[8.362101] (my_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.363781] (my_cpp_pkg) CommandEnded: {'returncode': 2}
+[8.398756] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 2}
+[8.409938] (-) EventReactorShutdown: {}

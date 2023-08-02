@@ -1,0 +1,409 @@
+[0.000000] (-) TimerEvent: {}
+[0.000566] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.000632] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000681] (my_roobot_interfaces) JobQueued: {'identifier': 'my_roobot_interfaces', 'dependencies': OrderedDict()}
+[0.000733] (my_roobot_interfaces) JobStarted: {'identifier': 'my_roobot_interfaces'}
+[0.010417] (my_roobot_interfaces) JobProgress: {'identifier': 'my_roobot_interfaces', 'progress': 'cmake'}
+[0.012010] (my_roobot_interfaces) JobProgress: {'identifier': 'my_roobot_interfaces', 'progress': 'build'}
+[0.013041] (my_roobot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2_ws/build/my_roobot_interfaces', '--', '-j2', '-l2'], 'cwd': '/home/ros2_ws/build/my_roobot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '127.0.0.1 43452 22003'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ros2_ws/install/my_roobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/root'), ('OLDPWD', '/home'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'DESKTOP-FUPJPMS'), ('WSL_INTEROP', '/run/WSL/8_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('LIBGL_ALWAYS_INDIRECT', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_1.2.5.0_x64__8wekyb3d8bbwe:/mnt/c/Users/ADMINI~1/AppData/Roaming/MobaXterm/slash/bin:/mnt/c/Windows/:/mnt/c/Windows/system32/:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Administrator/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Administrator/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.2/bin:/mnt/c/Users/Administrator/AppData/Roaming/npm:/mnt/c/Program Files/ffmpeg-2023-03-05-git-912ac82a3c-full_build/bin:/mnt/c/Users/Administrator/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Administrator/.jdks/openjdk-19.0.2/bin:/mnt/c/Program Files/Maven/apache-maven-3.9.1/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.2/bin:/mnt/c/Program Files/MongoDB/Server/6.0/bin:/mnt/c/Windows/sysnative/:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ros2_ws/install/my_roobot_interfaces:/home/ros2_ws/install/my_py_pkg:/home/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ros2_ws/build/my_roobot_interfaces'), ('SSH_CONNECTION', '127.0.0.1 43452 127.0.0.1 22003'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages:/home/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ros2_ws/install/my_roobot_interfaces:/home/ros2_ws/install/my_cpp_pkg:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.045912] (my_roobot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098539] (-) TimerEvent: {}
+[0.166169] (my_roobot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.167558] (my_roobot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.169996] (my_roobot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.198734] (-) TimerEvent: {}
+[0.299146] (-) TimerEvent: {}
+[0.384591] (my_roobot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399251] (-) TimerEvent: {}
+[0.499555] (-) TimerEvent: {}
+[0.599832] (-) TimerEvent: {}
+[0.619207] (my_roobot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.699926] (-) TimerEvent: {}
+[0.764012] (my_roobot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800077] (-) TimerEvent: {}
+[0.900355] (-) TimerEvent: {}
+[0.951458] (my_roobot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.969051] (my_roobot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.987575] (my_roobot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.987720] (my_roobot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.987806] (my_roobot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.000485] (-) TimerEvent: {}
+[1.011029] (my_roobot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.079774] (my_roobot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.083002] (my_roobot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2_ws/build/my_roobot_interfaces\n'}
+[1.100591] (-) TimerEvent: {}
+[1.102043] (my_roobot_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.117739] (my_roobot_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.200687] (-) TimerEvent: {}
+[1.301012] (-) TimerEvent: {}
+[1.401273] (-) TimerEvent: {}
+[1.501519] (-) TimerEvent: {}
+[1.596471] (my_roobot_interfaces) StdoutLine: {'line': b'[  3%] Built target my_roobot_interfaces__cpp\n'}
+[1.601655] (-) TimerEvent: {}
+[1.627369] (my_roobot_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_my_roobot_interfaces\n'}
+[1.630183] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_generator_c\x1b[0m\n'}
+[1.636343] (my_roobot_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.640564] (my_roobot_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_roobot_interfaces/msg/detail/hardware_status__functions.c.o\x1b[0m\n'}
+[1.678629] (my_roobot_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_roobot_interfaces/msg/detail/led_state_array__functions.c.o\x1b[0m\n'}
+[1.701742] (-) TimerEvent: {}
+[1.714646] (my_roobot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_roobot_interfaces/srv/detail/compute_rectangle_area__functions.c.o\x1b[0m\n'}
+[1.758182] (my_roobot_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_roobot_interfaces/srv/detail/set_led__functions.c.o\x1b[0m\n'}
+[1.800527] (my_roobot_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libmy_roobot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.801810] (-) TimerEvent: {}
+[1.902052] (-) TimerEvent: {}
+[1.924964] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.939416] (my_roobot_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_roobot_interfaces/msg/hardware_status__type_support.cpp.o\x1b[0m\n'}
+[1.982767] (my_roobot_interfaces) StdoutLine: {'line': b'[ 16%] Built target my_roobot_interfaces__rosidl_generator_c\n'}
+[1.990869] (my_roobot_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.002147] (-) TimerEvent: {}
+[2.102391] (-) TimerEvent: {}
+[2.161599] (my_roobot_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_roobot_interfaces/msg/led_state_array__type_support.cpp.o\x1b[0m\n'}
+[2.202501] (-) TimerEvent: {}
+[2.302777] (-) TimerEvent: {}
+[2.337409] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.349570] (my_roobot_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_roobot_interfaces/msg/detail/dds_fastrtps/hardware_status__type_support.cpp.o\x1b[0m\n'}
+[2.378918] (my_roobot_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_roobot_interfaces/srv/compute_rectangle_area__type_support.cpp.o\x1b[0m\n'}
+[2.402879] (-) TimerEvent: {}
+[2.503172] (-) TimerEvent: {}
+[2.598626] (my_roobot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_roobot_interfaces/srv/set_led__type_support.cpp.o\x1b[0m\n'}
+[2.603268] (-) TimerEvent: {}
+[2.682961] (my_roobot_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_roobot_interfaces/msg/detail/dds_fastrtps/led_state_array__type_support.cpp.o\x1b[0m\n'}
+[2.703371] (-) TimerEvent: {}
+[2.803653] (-) TimerEvent: {}
+[2.814497] (my_roobot_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libmy_roobot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.903806] (-) TimerEvent: {}
+[3.004122] (-) TimerEvent: {}
+[3.007407] (my_roobot_interfaces) StdoutLine: {'line': b'[ 29%] Built target my_roobot_interfaces__rosidl_typesupport_cpp\n'}
+[3.016327] (my_roobot_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.098890] (my_roobot_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_roobot_interfaces/srv/detail/dds_fastrtps/compute_rectangle_area__type_support.cpp.o\x1b[0m\n'}
+[3.104209] (-) TimerEvent: {}
+[3.204435] (-) TimerEvent: {}
+[3.304732] (-) TimerEvent: {}
+[3.331359] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.343029] (my_roobot_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_roobot_interfaces/msg/detail/hardware_status__type_support.cpp.o\x1b[0m\n'}
+[3.404818] (-) TimerEvent: {}
+[3.433416] (my_roobot_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_roobot_interfaces/srv/detail/dds_fastrtps/set_led__type_support.cpp.o\x1b[0m\n'}
+[3.504935] (-) TimerEvent: {}
+[3.605281] (-) TimerEvent: {}
+[3.705604] (-) TimerEvent: {}
+[3.780476] (my_roobot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_roobot_interfaces/msg/detail/led_state_array__type_support.cpp.o\x1b[0m\n'}
+[3.805734] (-) TimerEvent: {}
+[3.906060] (-) TimerEvent: {}
+[3.953364] (my_roobot_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libmy_roobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.006221] (-) TimerEvent: {}
+[4.106531] (-) TimerEvent: {}
+[4.187749] (my_roobot_interfaces) StdoutLine: {'line': b'[ 40%] Built target my_roobot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.206636] (-) TimerEvent: {}
+[4.240453] (my_roobot_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_roobot_interfaces/srv/detail/compute_rectangle_area__type_support.cpp.o\x1b[0m\n'}
+[4.306746] (-) TimerEvent: {}
+[4.392902] (my_roobot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.393664] (my_roobot_interfaces) StdoutLine: {'line': b'writing my_roobot_interfaces.egg-info/PKG-INFO\n'}
+[4.394020] (my_roobot_interfaces) StdoutLine: {'line': b'writing dependency_links to my_roobot_interfaces.egg-info/dependency_links.txt\n'}
+[4.394279] (my_roobot_interfaces) StdoutLine: {'line': b'writing top-level names to my_roobot_interfaces.egg-info/top_level.txt\n'}
+[4.396549] (my_roobot_interfaces) StdoutLine: {'line': b"reading manifest file 'my_roobot_interfaces.egg-info/SOURCES.txt'\n"}
+[4.397609] (my_roobot_interfaces) StdoutLine: {'line': b"writing manifest file 'my_roobot_interfaces.egg-info/SOURCES.txt'\n"}
+[4.406852] (-) TimerEvent: {}
+[4.421542] (my_roobot_interfaces) StdoutLine: {'line': b'[ 41%] Built target ament_cmake_python_build_my_roobot_interfaces_egg\n'}
+[4.430126] (my_roobot_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.506951] (-) TimerEvent: {}
+[4.549528] (my_roobot_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_roobot_interfaces/srv/detail/set_led__type_support.cpp.o\x1b[0m\n'}
+[4.607083] (-) TimerEvent: {}
+[4.707391] (-) TimerEvent: {}
+[4.770615] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.782559] (my_roobot_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_roobot_interfaces/msg/detail/hardware_status__type_support_c.cpp.o\x1b[0m\n'}
+[4.807536] (-) TimerEvent: {}
+[4.859409] (my_roobot_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libmy_roobot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.907692] (-) TimerEvent: {}
+[5.007994] (-) TimerEvent: {}
+[5.108292] (-) TimerEvent: {}
+[5.109396] (my_roobot_interfaces) StdoutLine: {'line': b'[ 49%] Built target my_roobot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[5.118055] (my_roobot_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.127592] (my_roobot_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_roobot_interfaces/msg/detail/led_state_array__type_support_c.cpp.o\x1b[0m\n'}
+[5.208384] (-) TimerEvent: {}
+[5.308671] (-) TimerEvent: {}
+[5.397741] (my_roobot_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_roobot_interfaces/srv/detail/compute_rectangle_area__type_support_c.cpp.o\x1b[0m\n'}
+[5.408784] (-) TimerEvent: {}
+[5.445603] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[5.454350] (my_roobot_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_roobot_interfaces/msg/detail/hardware_status__type_support.c.o\x1b[0m\n'}
+[5.479569] (my_roobot_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_roobot_interfaces/msg/detail/led_state_array__type_support.c.o\x1b[0m\n'}
+[5.507452] (my_roobot_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_roobot_interfaces/srv/detail/compute_rectangle_area__type_support.c.o\x1b[0m\n'}
+[5.508851] (-) TimerEvent: {}
+[5.535760] (my_roobot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_roobot_interfaces/srv/detail/set_led__type_support.c.o\x1b[0m\n'}
+[5.563668] (my_roobot_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking C shared library libmy_roobot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.609029] (-) TimerEvent: {}
+[5.702398] (my_roobot_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_roobot_interfaces/srv/detail/set_led__type_support_c.cpp.o\x1b[0m\n'}
+[5.709229] (-) TimerEvent: {}
+[5.748878] (my_roobot_interfaces) StdoutLine: {'line': b'[ 65%] Built target my_roobot_interfaces__rosidl_typesupport_introspection_c\n'}
+[5.756969] (my_roobot_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.809320] (-) TimerEvent: {}
+[5.909570] (-) TimerEvent: {}
+[5.992006] (my_roobot_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libmy_roobot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.007021] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[6.009747] (-) TimerEvent: {}
+[6.018924] (my_roobot_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_roobot_interfaces/msg/hardware_status__type_support.cpp.o\x1b[0m\n'}
+[6.046119] (my_roobot_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_roobot_interfaces/msg/led_state_array__type_support.cpp.o\x1b[0m\n'}
+[6.073328] (my_roobot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_roobot_interfaces/srv/compute_rectangle_area__type_support.cpp.o\x1b[0m\n'}
+[6.104847] (my_roobot_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_roobot_interfaces/srv/set_led__type_support.cpp.o\x1b[0m\n'}
+[6.109868] (-) TimerEvent: {}
+[6.136676] (my_roobot_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libmy_roobot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.210022] (-) TimerEvent: {}
+[6.231174] (my_roobot_interfaces) StdoutLine: {'line': b'[ 78%] Built target my_roobot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[6.310268] (-) TimerEvent: {}
+[6.335318] (my_roobot_interfaces) StdoutLine: {'line': b'[ 78%] Built target my_roobot_interfaces__rosidl_typesupport_c\n'}
+[6.350993] (my_roobot_interfaces) StdoutLine: {'line': b'[ 78%] Built target my_roobot_interfaces\n'}
+[6.366750] (my_roobot_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.410400] (-) TimerEvent: {}
+[6.510740] (-) TimerEvent: {}
+[6.611032] (-) TimerEvent: {}
+[6.711319] (-) TimerEvent: {}
+[6.811604] (-) TimerEvent: {}
+[6.911851] (-) TimerEvent: {}
+[6.916063] (my_roobot_interfaces) StdoutLine: {'line': b'[ 80%] Built target my_roobot_interfaces__py\n'}
+[6.925856] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_generator_py\x1b[0m\n'}
+[6.937166] (my_roobot_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_roobot_interfaces/msg/_led_state_array_s.c.o\x1b[0m\n'}
+[6.937387] (my_roobot_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_roobot_interfaces/msg/_hardware_status_s.c.o\x1b[0m\n'}
+[7.011971] (-) TimerEvent: {}
+[7.018032] (my_roobot_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_roobot_interfaces/srv/_compute_rectangle_area_s.c.o\x1b[0m\n'}
+[7.021154] (my_roobot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_roobot_interfaces/srv/_set_led_s.c.o\x1b[0m\n'}
+[7.104803] (my_roobot_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_roobot_interfaces/libmy_roobot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[7.112066] (-) TimerEvent: {}
+[7.212370] (-) TimerEvent: {}
+[7.284154] (my_roobot_interfaces) StdoutLine: {'line': b'[ 89%] Built target my_roobot_interfaces__rosidl_generator_py\n'}
+[7.292569] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[7.292747] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[7.302242] (my_roobot_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_roobot_interfaces/_my_roobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.302400] (my_roobot_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_roobot_interfaces/_my_roobot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.312536] (-) TimerEvent: {}
+[7.390630] (my_roobot_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.394202] (my_roobot_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.412717] (-) TimerEvent: {}
+[7.513143] (-) TimerEvent: {}
+[7.535358] (my_roobot_interfaces) StdoutLine: {'line': b'[ 96%] Built target my_roobot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.539281] (my_roobot_interfaces) StdoutLine: {'line': b'[ 96%] Built target my_roobot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[7.544441] (my_roobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_roobot_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.554787] (my_roobot_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/my_roobot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_roobot_interfaces/_my_roobot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.613297] (-) TimerEvent: {}
+[7.639662] (my_roobot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.713504] (-) TimerEvent: {}
+[7.813969] (-) TimerEvent: {}
+[7.823787] (my_roobot_interfaces) StdoutLine: {'line': b'[100%] Built target my_roobot_interfaces__rosidl_typesupport_c__pyext\n'}
+[7.833215] (my_roobot_interfaces) CommandEnded: {'returncode': 0}
+[7.914167] (-) TimerEvent: {}
+[7.927594] (my_roobot_interfaces) JobProgress: {'identifier': 'my_roobot_interfaces', 'progress': 'install'}
+[7.934091] (my_roobot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2_ws/build/my_roobot_interfaces'], 'cwd': '/home/ros2_ws/build/my_roobot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '127.0.0.1 43452 22003'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ros2_ws/install/my_roobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/root'), ('OLDPWD', '/home'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'DESKTOP-FUPJPMS'), ('WSL_INTEROP', '/run/WSL/8_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('LIBGL_ALWAYS_INDIRECT', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_1.2.5.0_x64__8wekyb3d8bbwe:/mnt/c/Users/ADMINI~1/AppData/Roaming/MobaXterm/slash/bin:/mnt/c/Windows/:/mnt/c/Windows/system32/:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Administrator/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Administrator/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.2/bin:/mnt/c/Users/Administrator/AppData/Roaming/npm:/mnt/c/Program Files/ffmpeg-2023-03-05-git-912ac82a3c-full_build/bin:/mnt/c/Users/Administrator/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Administrator/.jdks/openjdk-19.0.2/bin:/mnt/c/Program Files/Maven/apache-maven-3.9.1/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.2/bin:/mnt/c/Program Files/MongoDB/Server/6.0/bin:/mnt/c/Windows/sysnative/:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ros2_ws/install/my_roobot_interfaces:/home/ros2_ws/install/my_py_pkg:/home/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ros2_ws/build/my_roobot_interfaces'), ('SSH_CONNECTION', '127.0.0.1 43452 127.0.0.1 22003'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages:/home/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ros2_ws/install/my_roobot_interfaces:/home/ros2_ws/install/my_cpp_pkg:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[7.939833] (my_roobot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.939987] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_roobot_interfaces\n'}
+[7.941144] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces\n'}
+[7.941833] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv\n'}
+[7.942789] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/compute_rectangle_area.h\n'}
+[7.942922] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/set_led.h\n'}
+[7.943024] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail\n'}
+[7.944124] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__functions.h\n'}
+[7.944236] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__struct.h\n'}
+[7.944324] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__functions.c\n'}
+[7.944529] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__type_support.h\n'}
+[7.944641] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__type_support.h\n'}
+[7.944728] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__functions.h\n'}
+[7.944810] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__struct.h\n'}
+[7.944889] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__functions.c\n'}
+[7.945034] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg\n'}
+[7.946155] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/hardware_status.h\n'}
+[7.946309] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/led_state_array.h\n'}
+[7.946398] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.946487] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail\n'}
+[7.946866] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__struct.h\n'}
+[7.946975] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__struct.h\n'}
+[7.947054] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__type_support.h\n'}
+[7.947162] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__functions.h\n'}
+[7.947338] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__functions.c\n'}
+[7.947454] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__type_support.h\n'}
+[7.947545] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__functions.c\n'}
+[7.947618] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__functions.h\n'}
+[7.947823] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/environment/library_path.sh\n'}
+[7.947912] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/environment/library_path.dsv\n'}
+[7.948178] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_generator_c.so\n'}
+[7.948570] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_generator_c.so" to ""\n'}
+[7.948696] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces\n'}
+[7.948780] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv\n'}
+[7.948894] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail\n'}
+[7.948962] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_fastrtps_c.h\n'}
+[7.949038] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__rosidl_typesupport_fastrtps_c.h\n'}
+[7.949117] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg\n'}
+[7.949170] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.949220] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail\n'}
+[7.949298] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__rosidl_typesupport_fastrtps_c.h\n'}
+[7.949348] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__rosidl_typesupport_fastrtps_c.h\n'}
+[7.949396] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[7.949705] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.949834] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces\n'}
+[7.949922] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv\n'}
+[7.949992] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail\n'}
+[7.950045] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__type_support.c\n'}
+[7.950148] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_introspection_c.h\n'}
+[7.950273] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__type_support.c\n'}
+[7.950326] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__rosidl_typesupport_introspection_c.h\n'}
+[7.950375] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg\n'}
+[7.950448] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.950504] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail\n'}
+[7.950569] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__type_support.c\n'}
+[7.950634] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__type_support.c\n'}
+[7.950683] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__rosidl_typesupport_introspection_c.h\n'}
+[7.950730] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__rosidl_typesupport_introspection_c.h\n'}
+[7.950911] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[7.951276] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.951387] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_c.so\n'}
+[7.951759] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[7.951866] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces\n'}
+[7.951951] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv\n'}
+[7.952050] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/compute_rectangle_area.hpp\n'}
+[7.952155] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/set_led.hpp\n'}
+[7.952235] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail\n'}
+[7.952286] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__builder.hpp\n'}
+[7.952360] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__traits.hpp\n'}
+[7.952428] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__traits.hpp\n'}
+[7.952526] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__builder.hpp\n'}
+[7.952574] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__struct.hpp\n'}
+[7.952759] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__struct.hpp\n'}
+[7.952880] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg\n'}
+[7.952954] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/led_state_array.hpp\n'}
+[7.953009] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/hardware_status.hpp\n'}
+[7.953118] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail\n'}
+[7.953184] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__builder.hpp\n'}
+[7.953255] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__traits.hpp\n'}
+[7.953333] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__traits.hpp\n'}
+[7.953408] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__struct.hpp\n'}
+[7.953517] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__builder.hpp\n'}
+[7.953607] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__struct.hpp\n'}
+[7.953823] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces\n'}
+[7.953929] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv\n'}
+[7.954010] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail\n'}
+[7.954176] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.954231] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.954334] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/dds_fastrtps\n'}
+[7.954394] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg\n'}
+[7.954443] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.954490] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail\n'}
+[7.954538] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.954585] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/dds_fastrtps\n'}
+[7.954631] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.956213] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.956639] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.956766] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces\n'}
+[7.956849] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv\n'}
+[7.956904] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail\n'}
+[7.956982] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__type_support.cpp\n'}
+[7.957105] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.957243] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.957301] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/srv/detail/set_led__type_support.cpp\n'}
+[7.957386] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg\n'}
+[7.957462] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail\n'}
+[7.957518] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__type_support.cpp\n'}
+[7.957598] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__type_support.cpp\n'}
+[7.957652] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/hardware_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.957705] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/include/my_roobot_interfaces/my_roobot_interfaces/msg/detail/led_state_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.958722] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[7.959241] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.960149] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[7.960548] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[7.960685] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/environment/pythonpath.sh\n'}
+[7.960783] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/environment/pythonpath.dsv\n'}
+[7.960859] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces-0.0.0-py3.10.egg-info\n'}
+[7.960943] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.961034] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.961177] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.961303] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.961420] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces\n'}
+[7.961476] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.961597] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv\n'}
+[7.962082] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv/_set_led.py\n'}
+[7.962209] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv/_set_led_s.c\n'}
+[7.962307] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv/_compute_rectangle_area_s.c\n'}
+[7.962429] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv/_compute_rectangle_area.py\n'}
+[7.962643] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv/__init__.py\n'}
+[7.962755] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.962840] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/_my_roobot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.963010] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.963182] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/libmy_roobot_interfaces__rosidl_generator_py.so\n'}
+[7.963362] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg\n'}
+[7.963453] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg/_led_state_array.py\n'}
+[7.963541] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg/_led_state_array_s.c\n'}
+[7.963613] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg/_hardware_status_s.c\n'}
+[7.963692] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg/__init__.py\n'}
+[7.963767] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg/_hardware_status.py\n'}
+[7.963929] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/_my_roobot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[7.964039] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/_my_roobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.964215] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/__init__.py\n'}
+[7.995345] (my_roobot_interfaces) StdoutLine: {'line': b"Listing '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces'...\n"}
+[7.995498] (my_roobot_interfaces) StdoutLine: {'line': b"Compiling '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/__init__.py'...\n"}
+[7.995563] (my_roobot_interfaces) StdoutLine: {'line': b"Listing '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg'...\n"}
+[7.995622] (my_roobot_interfaces) StdoutLine: {'line': b"Compiling '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg/__init__.py'...\n"}
+[7.995672] (my_roobot_interfaces) StdoutLine: {'line': b"Compiling '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg/_hardware_status.py'...\n"}
+[7.995727] (my_roobot_interfaces) StdoutLine: {'line': b"Compiling '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/msg/_led_state_array.py'...\n"}
+[7.995776] (my_roobot_interfaces) StdoutLine: {'line': b"Listing '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv'...\n"}
+[7.995824] (my_roobot_interfaces) StdoutLine: {'line': b"Compiling '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv/__init__.py'...\n"}
+[7.995871] (my_roobot_interfaces) StdoutLine: {'line': b"Compiling '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv/_compute_rectangle_area.py'...\n"}
+[7.995918] (my_roobot_interfaces) StdoutLine: {'line': b"Compiling '/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/srv/_set_led.py'...\n"}
+[7.999341] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.999687] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.999893] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.000288] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.000489] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.000833] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/local/lib/python3.10/dist-packages/my_roobot_interfaces/my_roobot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.000973] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_generator_py.so\n'}
+[8.001405] (my_roobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2_ws/install/my_roobot_interfaces/lib/libmy_roobot_interfaces__rosidl_generator_py.so" to ""\n'}
+[8.001486] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/msg/HardwareStatus.idl\n'}
+[8.001566] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/msg/LedStateArray.idl\n'}
+[8.001623] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/srv/ComputeRectangleArea.idl\n'}
+[8.001673] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/srv/SetLed.idl\n'}
+[8.001749] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/msg/HardwareStatus.msg\n'}
+[8.001808] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/msg/LedStateArray.msg\n'}
+[8.001856] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/srv/ComputeRectangleArea.srv\n'}
+[8.001904] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/srv/ComputeRectangleArea_Request.msg\n'}
+[8.001973] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/srv/ComputeRectangleArea_Response.msg\n'}
+[8.002025] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/srv/SetLed.srv\n'}
+[8.002094] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/srv/SetLed_Request.msg\n'}
+[8.002179] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/srv/SetLed_Response.msg\n'}
+[8.002253] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_roobot_interfaces\n'}
+[8.002687] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_roobot_interfaces\n'}
+[8.002782] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/environment/ament_prefix_path.sh\n'}
+[8.002885] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/environment/ament_prefix_path.dsv\n'}
+[8.002944] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/environment/path.sh\n'}
+[8.003013] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/environment/path.dsv\n'}
+[8.003157] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/local_setup.bash\n'}
+[8.003214] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/local_setup.sh\n'}
+[8.003273] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/local_setup.zsh\n'}
+[8.003341] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/local_setup.dsv\n'}
+[8.003445] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/package.dsv\n'}
+[8.003510] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/ament_index/resource_index/packages/my_roobot_interfaces\n'}
+[8.004093] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_generator_cExport.cmake\n'}
+[8.004244] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.004559] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.004685] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.004992] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.005134] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.005381] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[8.005484] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.005789] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[8.006112] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.006312] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.006649] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.006869] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.007156] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[8.007371] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.007664] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[8.007876] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/export_my_roobot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.009877] (my_roobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[8.010038] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.010155] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.010277] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.010456] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.011156] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.011586] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.012040] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfacesConfig.cmake\n'}
+[8.013093] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/cmake/my_roobot_interfacesConfig-version.cmake\n'}
+[8.013331] (my_roobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/my_roobot_interfaces/share/my_roobot_interfaces/package.xml\n'}
+[8.013479] (my_roobot_interfaces) CommandEnded: {'returncode': 0}
+[8.014584] (-) TimerEvent: {}
+[8.114995] (-) TimerEvent: {}
+[8.130361] (my_roobot_interfaces) JobEnded: {'identifier': 'my_roobot_interfaces', 'rc': 0}
+[8.130953] (-) EventReactorShutdown: {}

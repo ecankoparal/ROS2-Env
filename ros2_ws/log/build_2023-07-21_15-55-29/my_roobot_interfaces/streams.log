@@ -1,0 +1,24 @@
+[0.023s] Invoking command in '/home/ros2_ws/build/my_roobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/ros2_ws/src/my_roobot_interfaces -DCMAKE_INSTALL_PREFIX=/home/ros2_ws/install/my_roobot_interfaces
+[0.515s] -- The C compiler identification is GNU 11.3.0
+[1.685s] -- The CXX compiler identification is GNU 11.3.0
+[2.575s] -- Detecting C compiler ABI info
+[2.971s] -- Detecting C compiler ABI info - done
+[2.978s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.980s] -- Detecting C compile features
+[2.981s] -- Detecting C compile features - done
+[2.986s] -- Detecting CXX compiler ABI info
+[3.289s] -- Detecting CXX compiler ABI info - done
+[3.295s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.296s] -- Detecting CXX compile features
+[3.296s] -- Detecting CXX compile features - done
+[3.297s] [31mCMake Error at CMakeLists.txt:4 (if):
+[3.297s]   if given arguments:
+[3.297s] 
+[3.297s]     "CMAKE" "CXX" "STANDARD"
+[3.297s] 
+[3.297s]   Unknown arguments specified
+[3.297s] 
+[3.297s] [0m
+[3.297s] -- Configuring incomplete, errors occurred!
+[3.297s] See also "/home/ros2_ws/build/my_roobot_interfaces/CMakeFiles/CMakeOutput.log".
+[3.305s] Invoked command in '/home/ros2_ws/build/my_roobot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/ros2_ws/src/my_roobot_interfaces -DCMAKE_INSTALL_PREFIX=/home/ros2_ws/install/my_roobot_interfaces

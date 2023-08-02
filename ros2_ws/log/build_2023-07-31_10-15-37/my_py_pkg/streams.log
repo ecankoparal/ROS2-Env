@@ -1,0 +1,19 @@
+[0.485s] Invoking command in '/home/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/ros2_ws/build/my_py_pkg/prefix_override:/home/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros2_ws/build/my_py_pkg/build --no-deps install_data
+[0.687s] running develop
+[0.798s] running egg_info
+[0.798s] writing my_py_pkg.egg-info/PKG-INFO
+[0.800s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[0.801s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[0.801s] writing requirements to my_py_pkg.egg-info/requires.txt
+[0.801s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[0.802s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.803s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.804s] running build_ext
+[0.804s] Creating /home/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[0.805s] Installing led_panel script to /home/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.805s] Installing py_node script to /home/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.805s] Installing video_publisher script to /home/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.806s] 
+[0.806s] Installed /home/ros2_ws/build/my_py_pkg
+[0.806s] running install_data
+[0.832s] Invoked command in '/home/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/ros2_ws/build/my_py_pkg/prefix_override:/home/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros2_ws/build/my_py_pkg/build --no-deps install_data

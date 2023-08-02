@@ -1,0 +1,13 @@
+[0.014s] Invoking command in '/home/ros2_ws/build/my_roobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ros2_ws/build/my_roobot_interfaces -- -j2 -l2
+[0.034s] [31mCMake Error at CMakeLists.txt:4 (if):
+[0.034s]   if given arguments:
+[0.034s] 
+[0.034s]     "not" "CMAKE_CXX_STANDARD"
+[0.034s] 
+[0.034s]   Unknown arguments specified
+[0.034s] 
+[0.034s] [0m
+[0.034s] -- Configuring incomplete, errors occurred!
+[0.035s] See also "/home/ros2_ws/build/my_roobot_interfaces/CMakeFiles/CMakeOutput.log".
+[0.036s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[0.037s] Invoked command in '/home/ros2_ws/build/my_roobot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ros2_ws/build/my_roobot_interfaces -- -j2 -l2

@@ -1,0 +1,8 @@
+[31mCMake Error at CMakeLists.txt:4 (if):
+  if given arguments:
+
+    "CMAKE" "CXX" "STANDARD"
+
+  Unknown arguments specified
+
+[0m

@@ -1,0 +1,4 @@
+/home/ros2_ws/build/my_roobot_interfaces/rosidl_adapter/my_roobot_interfaces:msg/HardwareStatus.idl
+/home/ros2_ws/build/my_roobot_interfaces/rosidl_adapter/my_roobot_interfaces:msg/LedStateArray.idl
+/home/ros2_ws/build/my_roobot_interfaces/rosidl_adapter/my_roobot_interfaces:srv/ComputeRectangleArea.idl
+/home/ros2_ws/build/my_roobot_interfaces/rosidl_adapter/my_roobot_interfaces:srv/SetLed.idl
